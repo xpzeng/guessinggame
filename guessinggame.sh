@@ -8,6 +8,8 @@ read guess
 
 enterguess
 
+num=$(ls -1 | wc -l)
+
 while [[ $guess -ne 10 ]] # while loop uses do and done
 do
   if [[ $guess -gt 10 ]]
